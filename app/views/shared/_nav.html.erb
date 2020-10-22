@@ -3,21 +3,17 @@
 </div>
 
 <ul class="custom-nav nav nav-tabs">
-    <li class="active">
+    <li class="<%= active?(root_path) %>">
         <%= link_to 'Home', root_path %>
     </li>
-    <li>
+    <li class="<%= active?(posts_path) %>">
         <%= link_to 'Entries', posts_path %>
     </li>
-    <li>
+    <li class="<%= active?(edit_user_registration_path) %>">
         <%= link_to 'Edit User', edit_user_registration_path %>
     </li>
-    <li>
+    <li class="<%= active?(destroy_user_session_path) %>">
     <%= link_to 'Log Out', destroy_user_session_path, method: :delete %>
 
     </li>
 </ul>
-
-mike greene
-
-888 456 3187
